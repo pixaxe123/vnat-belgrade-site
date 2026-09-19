@@ -1,2 +1,34 @@
-# vnat-belgrade-site
-VNAT Belgrade academic society website
+# 유고슬라비아 베오그라드 학회 웹사이트
+
+이 저장소는 VNAT 학회 사이트를 정적으로 구성한 예시입니다.
+
+## 구성
+- `index.html`: 메인 페이지
+- `styles.css`: 스타일시트
+- `app.js`: 데이터 로딩 및 조회 로직
+- `data/records.txt`: 수험번호별 성적 데이터
+- `data/papers.txt`: 논문 목록
+- `data/partners.txt`: 협력 국가·회사 목록
+
+## 실행 방법
+1. 로컬 저장소 폴더에서 아래 명령을 실행합니다.
+   ```bash
+   python -m http.server 8000
+   ```
+2. 브라우저에서 `http://localhost:8000` 으로 접속합니다.
+
+## 데이터 형식
+### 성적 데이터
+```text
+1923:{김00:10,10,10:1}
+```
+- `1923`: 수험번호
+- `김00`: 이름
+- `10,10,10`: 배경지식, 운영, 군사 점수
+- `1`: 제 1회 VNAT 시험 성적
+
+### 논문/협력 목록
+```text
+VNAT 기본 이론 - https://example.com/vnat-basic
+```
+- 제목과 링크를 ` - ` 구분자로 표시합니다.

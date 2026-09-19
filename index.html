@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유고슬라비아 베오그라드 학회</title>
+    <meta
+      name="description"
+      content="유고슬라비아 베오그라드 학회 공식 사이트. 학회 가입 안내, VNAT 일정, 이력조회, 논문조회, 협력 국가·회사 정보를 제공합니다."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">유고슬라비아 베오그라드 학회</div>
+        <nav class="main-nav" aria-label="메인 메뉴">
+          <a href="#join">학회 가입 안내</a>
+          <a href="#schedule">VNAT 일정</a>
+          <a href="#records">VNAT 이력조회</a>
+          <a href="#papers">논문조회</a>
+          <a href="#partners">VNAT 협력 국가·회사</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Academic Society</p>
+            <h1>유고슬라비아 베오그라드 학회</h1>
+            <p class="lead">
+              학회 가입 안내, VNAT 일정, 성적 이력 조회, 논문 자료, 협력국가와
+              회사 정보를 한곳에서 확인할 수 있습니다.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#join">학회 가입 안내</a>
+              <a class="btn btn-secondary" href="#records">이력 조회하기</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="mini-tag">한국 기준</div>
+            <h3>VNAT 일정</h3>
+            <ul>
+              <li><span class="dot saturday"></span> 매주 토요일: VNAT 시험</li>
+              <li><span class="dot sunday"></span> 일요일: 결과 발표</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Membership</p>
+            <h2>학회 가입 안내</h2>
+          </div>
+          <div class="info-box">
+            <p>
+              유고슬라비아 국적 취득 후 베오그라드 대학 입장 후 티토 지나이다에게
+              문의하십시오.
+            </p>
+            <a
+              class="cta-link"
+              href="https://open.kakao.com/o/gr6pecHg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              유고슬라비아 제국 본국 링크
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section panel alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Schedule</p>
+            <h2>VNAT 일정</h2>
+          </div>
+
+          <div class="calendar-box">
+            <div class="calendar-header">한국 기준 달력</div>
+            <div class="calendar-grid" aria-label="VNAT 일정 달력">
+              <div class="day-name">월</div>
+              <div class="day-name">화</div>
+              <div class="day-name">수</div>
+              <div class="day-name">목</div>
+              <div class="day-name">금</div>
+              <div class="day-name weekend">토</div>
+              <div class="day-name weekend">일</div>
+
+              <div class="day muted">-</div>
+              <div class="day muted">-</div>
+              <div class="day muted">-</div>
+              <div class="day muted">-</div>
+              <div class="day muted">-</div>
+              <div class="day weekend highlight">시험</div>
+              <div class="day weekend result">결과</div>
+            </div>
+            <ul class="schedule-list">
+              <li><strong>매주 토요일:</strong> VNAT 시험</li>
+              <li><strong>일요일:</strong> 결과 발표</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="records" class="section panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">History</p>
+            <h2>VNAT 이력조회</h2>
+          </div>
+
+          <div class="lookup-box">
+            <label for="exam-no">VNAT 수험번호를 입력해 주세요</label>
+            <div class="lookup-row">
+              <input
+                id="exam-no"
+                type="text"
+                placeholder="예: 1923"
+                aria-label="수험번호 입력"
+              />
+              <button id="search-record" class="btn btn-primary" type="button">
+                확인
+              </button>
+            </div>
+          </div>
+
+          <div id="record-result" class="result-box empty">
+            조회 결과가 여기에 표시됩니다.
+          </div>
+        </div>
+      </section>
+
+      <section id="papers" class="section panel alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Paper</p>
+            <h2>논문조회</h2>
+          </div>
+          <ul id="papers-list" class="link-list"></ul>
+        </div>
+      </section>
+
+      <section id="partners" class="section panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Partnership</p>
+            <h2>VNAT 협력 국가·회사</h2>
+          </div>
+          <ul id="partners-list" class="link-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 유고슬라비아 베오그라드 학회</p>
+      </div>
+    </footer>
+  </body>
+</html>
