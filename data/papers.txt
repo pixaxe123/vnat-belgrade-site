@@ -1,3 +1,3 @@
-1923:{김00:10,10,10:1}
-1924:{박01:9,10,8:1}
-2001:{최02:12,11,10:2}
+국내 VNAT 논문 자료 - https://example.com/vnat-papers
+베오그라드 학회 자료집 - https://example.com/belgrade-journal
+VNAT 시험 안내 PDF - https://example.com/vnat-guide
